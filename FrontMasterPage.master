@@ -1,0 +1,356 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontMasterPage.master.cs" Inherits="FrontMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head runat="server">
+    <title>Job and Placement</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="http://localhost:55500/front-assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="http://localhost:55500/front-assets/css/cssa108.css?family=Roboto:100,300,400,500,700%7CPlayfair+Display:400,700,700i,900,900i">
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div class="page">
+            <header class="page-head">
+                <div class="rd-navbar-wrap navbar-height">
+                    <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed"
+                        data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false"
+                        data-md-stick-up-offset="53px" data-lg-stick-up-offset="53px" data-md-stick-up="true" data-lg-stick-up="true"
+                        class="rd-navbar rd-navbar-corporate-dark">
+                        <div class="rd-navbar-inner">
+                            <div class="rd-navbar-aside">
+                                <div data-custom-toggle=".rd-navbar-aside" data-custom-toggle-disable-on-blur="true"
+                                    class="rd-navbar-aside-toggle">
+                                    <span></span>
+                                </div>
+                                <div class="rd-navbar-aside-content context-dark">
+                                    <ul class="rd-navbar-aside-group list-units">
+                                        <li>
+                                            <div class="unit unit-horizontal unit-spacing-xs">
+                                                <div class="unit-left">
+                                                    <span
+                                                        class="icon icon-xxs-small icon-primary material-icons-place icon-shift-1 offset-top-2"></span>
+                                                </div>
+                                                <div class="unit-body">
+                                                    <a href="#" class="link-white-v2 reveal-inline">#76, IInd Floor, Red Cross
+                          Market,Mehta Nagar, Hisar</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="unit unit-horizontal unit-spacing-xs">
+                                                <div class="unit-left">
+                                                    <span class="icon icon-xxs icon-primary fa-clock-o offset-top-2"></span>
+                                                </div>
+                                                <div class="unit-body">
+                                                    <p class="text-white">Mon – Sat: 9:00am–18:00pm. Sunday CLOSED</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="unit unit-horizontal unit-spacing-xs">
+                                                <div class="unit-left">
+                                                    <span
+                                                        class="icon icon-xxs icon-primary material-icons-phone icon-shift-2"></span>
+                                                </div>
+                                                <div class="unit-body"><a href="callto:#" class="link-white-v2">91-99920-48455</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="rd-navbar-aside-group">
+                                        <ul class="list-inline list-inline-reset">
+                                            <%--<li><a href="profile.aspx"><asp:Label ID="user_name" runat="server" Text="Guest"> </asp:Label><i class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-user"></i></a></li>--%>
+                                            <li><a href="#" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-facebook"></a></li>
+                                            <li><a href="#" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-twitter"></a></li>                                            
+                                            <li><a href="#" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-google-plus"></a>
+                                            </li>
+                                            
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-group rd-navbar-search-wrap" style="padding-top: 30px">
+                                <div class="rd-navbar-panel">
+                                    <button data-custom-toggle=".rd-navbar-nav-wrap" data-custom-toggle-disable-on-blur="true"
+                                        class="rd-navbar-toggle">
+                                        <span></span>
+                                    </button>
+                                    <a href="index.aspx" class="rd-navbar-brand brand">
+                                        <img src="http://localhost:55500/front-assets/img/logo.png" alt="logo" width="170"
+                                            height="34" /></a>
+                                </div>
+                                <div class="rd-navbar-nav-wrap">
+                                    <div class="rd-navbar-nav-inner">
+                                        <%--<div class="rd-navbar-search">
+                    <form action="http://templateforest.top/consulting/search-results.html" method="GET"
+                      data-search-live="rd-search-results-live" class="rd-search">
+                      <div class="form-group">
+                        <label for="rd-search-form-input" class="form-label">Search...</label>
+                        <input id="rd-search-form-input" type="text" name="s" autocomplete="off" class="form-control">
+                        <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                      </div>
+                      <button type="submit" class="rd-search-submit"></button>
+                    </form>
+                    <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap"
+                      class="rd-navbar-search-toggle"></button>
+                  </div>--%>
+                                        <ul class="rd-navbar-nav">
+                                            <li><a href="http://localhost:55500/Home">Home</a> </li>
+                                            <li><a href="">About Us</a>                                                
+                                            <ul class="rd-navbar-dropdown">
+                                                <li><a href="http://localhost:55500/Industry">Industries</a></li>
+                                                <li><a href="http://localhost:55500/AboutUs">About Us</a></li>
+                                                <li><a href="http://localhost:55500/Team">Our Team</a></li>
+                                                <li><a href="http://localhost:55500/Faqs">FAQ</a></li>
+                                                <li><a href="http://localhost:55500/Image-Gallery">Gallery</a></li>
+                                                <li><a href="http://localhost:55500/Interview-Questions">Interview Questions</a></li>
+                                            </ul>                                                    
+                                            </li>
+                                            <li><a href="http://localhost:55500/Services">Services</a>
+                                            </li>
+                                            <li><a href="http://localhost:55500/Blogs">Blog</a>
+                                            </li>
+                                             <li><a href="http://localhost:55500/Jobs">Jobs</a>
+                                            </li>
+                                            <li><a href="http://localhost:55500/Contact-us">Contacts</a> </li>
+                                             <li ID="dashboard" runat="server" visible="false"><a href="admin/blogs/index.aspx">Admin Dashboard</a></li>
+                                            <li ID="companyprofile" runat="server" visible="false"><a href="industries/setting.aspx">Dashboard</a></li>
+                                            <li ID="login" runat="server" visible="true"><a href="http://localhost:55500/Login">Login</a></li>
+                                            <li ID="registration" runat="server" visible="true"><a href="">Register</a>
+                                                <ul class="rd-navbar-dropdown">
+                                                    <li><a href="http://localhost:55500/Register">Register as User</a></li>
+                                                    <li><a href="http://localhost:55500/Industry-Register">Register as Industry</a></li>
+                                                </ul>
+                                            </li>
+                                              
+                                            <li ID="logout" runat="server" visible="false"> <asp:Image ID="profile_image" runat="server" width="30"
+                                                     height="30" alt="" class="img-circle" style="margin-top: -8px;"/>
+                                                <ul class="rd-navbar-dropdown">
+                                               <li><asp:Label ID="user_name" runat="server" Text="Guest" style="font-size:15px"></asp:Label></li>
+                                                <li  ID="profile" runat="server" visible="false"><a href="http://localhost:55500/Profile">Profile</a></li>
+                                                    <li  ID="Li1" runat="server" visible="true"><a href="http://localhost:55500/Applied-Jobs">Applied Jobs</a></li>
+                                                <li>
+                                                    <asp:LinkButton ID="logout_button" runat="server" OnClick="logout_button_Click" >Logout</asp:LinkButton> 
+                                                    </li>
+                                                    </ul>                     
+                                              </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main class="page-content">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+            <footer class="page-foot bg-cape-cod context-dark">
+                <section class="section-40 section-sm-75">
+                    <div class="shell">
+                        <div class="range range-xs-center">
+                            <div class="cell-xs-9 cell-sm-11 cell-lg-12">
+                                <div class="range">
+                                    <div class="cell-sm-6 cell-md-10 cell-lg-3">
+                                        <div style="max-width: 510px;" class="inset-lg-right-20">
+                                            <a href="index.html"
+                                                class="brand brand-inverse">
+                                                <img src="http://localhost:55500/front-assets/img/logo.png" alt="logo" width="135" height="34" /></a>
+                                            <p class="offset-top-22 text-dusty-gray">
+                                                Consulting delivers environment through which high-quality
+                      firms from diverse backgrounds can work together toward their own common goals.
+                                            </p>
+                                            <a href=""http://localhost:55500/Jobs" class="text-small-16 text-medium offset-top-15">Jobs and Placements</a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-sm-top-0 offset-md-top-50 offset-lg-top-0">
+                                        <h6 class="text-small-16 text-uppercase">Recent Posts</h6>
+                                        <div class="offset-top-22 offset-md-top-30">
+                                                           <asp:Repeater runat="server" ID="blogRepeater">
+                    <ItemTemplate>
+                                            <article class="post post-preview post-preview-inverse offset-top-22">
+                                                <a href="http://localhost:55500/BlogDetail/<%#Eval("id")%>">
+                                                    <div class="unit unit-horizontal unit-spacing-lg">
+                                                       
+                                                        <div class="unit-body">
+                                                            <div class="post-header">
+                                                                <p><%#Eval("title")%></p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="list-meta">
+                                                                    <li>
+                                                                        <time datetime="2016-12-23"><%#Eval("created_date")%></time>
+                                                                    </li>
+                                                                    <%--<li>4 Comment</li>--%>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                        </ItemTemplate>
+                </asp:Repeater>
+                                           <%-- <article class="post post-preview post-preview-inverse offset-top-22">
+                                                <a href="blog-post.html">
+                                                    <div class="unit unit-horizontal unit-spacing-lg">
+                                                        <div class="unit-left">
+                                                            <figure class="post-image">
+                                                                <img src="images/post-preview-2-70x70.jpg" alt="" width="70"
+                                                                    height="70" />
+                                                            </figure>
+                                                        </div>
+                                                        <div class="unit-body">
+                                                            <div class="post-header">
+                                                                <p>Audit Data Analytics: Why Auditors Should Care</p>
+                                                            </div>
+                                                            <div class="post-meta">
+                                                                <ul class="list-meta">
+                                                                    <li>
+                                                                        <time datetime="2016-12-23">June 20, 2016</time>
+                                                                    </li>
+                                                                    <li>4 Comment</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>--%>
+                                        </div>
+                                    </div>
+                                    <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
+                                        <h6 class="text-small-16 text-uppercase">Quick links</h6>
+                                        <div style="max-width: 270px;" class="row offset-top-22 offset-md-top-30">
+                                            <div class="col-xs-6">
+                                                <ul class="list-marked-variant-2">
+                                                    <li><a href="http://localhost:55500/Home">Home</a></li>
+                                                    <li><a href="http://localhost:55500/Services">Services</a></li>
+                                                    <li><a href="http://localhost:55500/Blogs">Blog</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <ul class="list-marked-variant-2">
+                                                    <li><a href="http://localhost:55500/AboutUs">About us</a></li>
+                                                    <li><a href="http://localhost:55500/Contact-us">Contacts</a></li>
+                                                    <li><a href="http://localhost:55500/Jobs">Jobs</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell-sm-6 cell-md-4 cell-lg-3 offset-top-50 offset-lg-top-0">
+                                        <h6 class="text-small-16 text-uppercase">Contact us</h6>
+                                        <address class="contact-info offset-top-22 offset-md-top-30 offset-lg-top-35 text-left">
+                                            <div class="unit unit-horizontal unit-spacing-md unit-middle">
+                                                <div class="unit-left">
+                                                    <span class="icon icon-xs icon-dusty-gray material-icons-phone"></span>
+                                                </div>
+                                                <div class="unit-body"><a href="callto:#" class="link-white">91-99920-48455</a></div>
+                                            </div>
+                                            <div class="unit unit-horizontal unit-spacing-md unit-middle offset-top-15">
+                                                <div class="unit-left"><span class="icon icon-xs icon-dusty-gray fa fa-envelope-o"></span></div>
+                                                <div class="unit-body">
+                                                    <a href="#5d7e" class="link-white"><span class="__cf_email__"
+                                                        data-cfemail="442d2a222b042021292b282d2a2f6a2b3623">a2zsolutionco@gmail.com</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="unit unit-horizontal unit-spacing-md offset-top-15">
+                                                <div class="unit-left">
+                                                    <span class="icon icon-xs icon-dusty-gray material-icons-place"></span>
+                                                </div>
+                                                <div class="unit-body">
+                                                    <a href="#" class="link-white reveal-inline">#76, IInd Floor, Red Cross
+                          Market, Railway Road<br>
+                                                        Near Arora News Agency<br>
+                                                        Mehta Nagar, Hisar<br>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="shell">
+                    <hr class="hr bg-abbey-04">
+                </div>
+                <section class="section-35">
+                    <div class="shell text-center">
+                        <div class="range range-sm-reverse range-sm-justify range-sm-middle">
+                            <div class="cell-sm-6 text-sm-right">
+                                <div class="group-sm group-middle">
+                                    <p class="text-italic text-white">Follow Us:</p>
+                                    <ul class="list-inline list-inline-reset">
+                                        <li><a href="#" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-facebook"></a></li>
+                                        <li><a href="#" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-twitter"></a></li>
+                                        <li><a href="#" class="icon icon-round icon-abbey-filled icon-xxs-smallest fa fa-google-plus"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cell-sm-6 offset-top-15 offset-sm-top-0 text-sm-left">
+                                <p class="rights text-white">
+                                    <span
+                                        id="copyright-year"></span><span>&nbsp;&#169;&nbsp;</span><span>Consulting.&nbsp;</span><a
+                                            href="privacy-policy.html" class="link-white-v2">Privacy Policy</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </div>
+        <div id="form-output-global" class="snackbars"></div>
+        <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+                        <button title="Share" class="pswp__button pswp__button--share"></button>
+                        <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+                        <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+                    <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__cent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://localhost:55500/front-assets/js/core.min.js"></script>
+        <script src="http://localhost:55500/front-assets/js/script.js"></script>
+    </form>
+
+</body>
+</html>
